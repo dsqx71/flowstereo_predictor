@@ -48,6 +48,8 @@ elif piper.model_type == 'stereo':
 ```
 
 ##Config example
+- model_prefix :  flow or stereo 
+- ctx : indicate which gpu you want to use.
 ``` config
 [model]
 model_prefix = flow  
