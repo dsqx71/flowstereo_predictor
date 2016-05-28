@@ -1,5 +1,5 @@
 # flowstereo-predictor
-Predict Optical flow and stereo seperately.
+Predict optical flow and stereo seperately.
 
 ## Installation
 ``` python
@@ -14,8 +14,8 @@ Current model version is 1.0
  
 
 ## Usage
-We want to make sure that APIs are consistency.So this usage is almost the same as [carpipeline's](https://github.com/TuSimple/erya-fuyi-car).
-You only need to do is putting .config file and model file together,and privide path of config file. 
+We want to make sure that APIs of car group are consistency.So this usage is almost the same as [carpipeline's](https://github.com/TuSimple/erya-fuyi-car).
+You only need to do is putting .config file and model file together,and provide path of config file. 
 
 ``` python
 import  flowstereo.pipe as pipe
