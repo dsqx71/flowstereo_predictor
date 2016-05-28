@@ -7,7 +7,7 @@ python setup.py install --user
 ```
 
 ## Model
-This project use **Dropbox** to manage model files. 
+This project use [Dropbox](https://www.dropbox.com/s/ekriap1abdc9yu5/model.zip?dl=0) to manage model files. 
 
 ## Model Version
 Current model version is 1.0
@@ -24,20 +24,21 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import sys
 
-
+# load model 
 config_path = './flowstereo/model.config'
 piper = pipe.Pipeline(config_path)
 
 # stereo: img1 is left image ,img2 is right image
 # optical flow: img1 is the first frame,img2 is the second frame.
 
+# load data 
 img1 = Image.open(sys.argv[1])
 img2 = Image.open(sys.argv[2])
 
+# predict
 ret = piper.process(img1,img2)
 
 # plot result
-
 if  piper.model_type == 'flow':
     util.plot_velocity_vector(ret)
     util.flow2color(ret)
