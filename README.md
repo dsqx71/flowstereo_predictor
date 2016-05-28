@@ -1,5 +1,5 @@
 # flowstereo-predictor
-Optical flow and stereo predictor
+Predict Optical flow and stereo seperately
 
 ## Installation
 ``` python
@@ -7,7 +7,7 @@ python setup.py install --user
 ```
 
 ## Model
-This project use **Aliyun** to manage model files. 
+This project use **Dropbox** to manage model files. 
 
 ## Model Version
 Current model version is 1.0
@@ -26,7 +26,7 @@ config_path = './flowstereo/model.config'
 piper = pipe.Pipeline(config_path)
 
 # stereo: img1 is left image ,img2 is right image
-# optical flow: img1 is the first frame,img2 is the scond frame.
+# optical flow: img1 is the first frame,img2 is the second frame.
 
 img1 = Image.open(sys.argv[1])
 img2 = Image.open(sys.argv[2])
