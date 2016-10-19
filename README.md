@@ -53,6 +53,8 @@ elif piper.model_type == 'stereo':
 - ctx : indicate which gpu you want to use.
 ``` config
 [model]
-model_prefix = flow  
+model_prefix = stereo
 ctx = 0
+img_width = 945
+img_height = 702
 ```
